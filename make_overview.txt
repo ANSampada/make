@@ -1,0 +1,22 @@
+What is make (general definition you can give)
+  “make is a build automation tool that reads a Makefile and executes commands to build software. It checks dependencies, compiles only what changed, and supports parallel builds using flags like -j. It’s widely used for C/C++ projects, kernels, and system software.”
+
+🛠️ How you can convincingly say you’ve worked with make
+Here’s a structure you can use:
+  Context
+    “In my previous work, I used make as part of our CI/CD pipelines for system/embedded builds.”
+  What you did with it
+    “I worked with Makefiles that defined how different components (like toolchains, rootfs, and VM images) should be built. I often ran builds with make O=legacy or make O=vm and tuned parallelism using -j16.”
+  Why it mattered
+    “Using make allowed us to rebuild only what changed instead of the entire project, which saved time and resources. I also monitored the job logs to understand failures in the make stage and adjusted parameters like FORCE_BR2_JLEVEL to optimize build performance.”
+  Your added value
+    “I integrated make-based builds into Jenkins jobs, so they ran automatically inside Docker containers, produced OVA images, and stored artifacts in our nightly build storage.”
+
+🎯 Example interview-ready statement
+“Yes, I’ve worked with make extensively. In our CI/CD pipelines, make was the engine that compiled our code into system images.
+I used make targets like O=legacy and O=vm, and controlled parallelism with -j16 to optimize build speed. 
+I also debugged make build logs when dependencies failed, and integrated make into Jenkins jobs running inside Docker.
+This gave me good experience not only in using make but also in scaling builds for performance and reliability.”
+
+
+
